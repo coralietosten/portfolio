@@ -1,6 +1,6 @@
 import Techno from '../Techno/Techno';
 
-function Card({ projet, description, techno, visuel, lien, copy }) {
+function Card({ projet, context, description, techno, visuel, lien, copy }) {
     const videoSource = visuel?.startsWith('/')
         ? `${process.env.PUBLIC_URL}${visuel}`
         : visuel;
@@ -15,6 +15,7 @@ function Card({ projet, description, techno, visuel, lien, copy }) {
             <div className='body'>
                 <div className="card-title-block"> 
                     <span className="project-kicker">{copy.label}</span>
+                    <span className="project-context">{context}</span>
                     <h3 className="name-project">{projet}</h3>
                 </div>
                 <p className="description-project">{description}</p>
@@ -23,12 +24,9 @@ function Card({ projet, description, techno, visuel, lien, copy }) {
                         <Techno key={index} nom={item} />
                     ))}
                 </div>
-                {/* <a href={lien} target="_blank" className="project-link">
-                    Voir le projet
-                </a> */}
             </div>
             <div className="card-footer">
-                <a href={lien} target="_blank" rel="noopener noreferrer" className="project-link">{copy.link}</a>
+                {lien !== "#" ? <a href={lien} target="_blank" rel="noopener noreferrer" className="project-link">{copy.link}</a> : null}
             </div>
         </div>
     )

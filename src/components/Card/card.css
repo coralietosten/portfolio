@@ -90,6 +90,40 @@
     text-transform: uppercase;
 }
 
+.project-context {
+    display: inline-flex;
+    width : 80%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom : 5px;
+
+    color: var(--card-muted);
+
+    font-size: 0.64rem;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.project-context::before {
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(145deg,
+            #980dbb 0%,
+            #753aff 100%);
+
+    box-shadow:
+        0 0 0 4px rgba(88, 176, 255, 0.18);
+}
+
 .project-kicker::before {
     content: "";
 

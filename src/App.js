@@ -81,6 +81,7 @@ function App() {
               <Card
                 key={projet.id}
                 projet={projet.nom}
+                context={projet.context}
                 description={language === 'en' ? projet.description_en : projet.description}
                 techno={projet.technologies}
                 visuel={projet.image ?? projet.video}
