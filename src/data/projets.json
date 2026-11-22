@@ -18,5 +18,25 @@
     "technologies": ["Node.js", "Express", "React", "Typescript", "API REST", "PostgreSQL", "Docker"],
     "video": "/video/opencve.mp4",
     "lien" : "https://cve.tomema.com"
+  },
+  {
+    "id": 3,
+    "nom": "Pipeline de données",
+    "context": "Projet académique",
+    "description": "Pipeline Spark/Scala en architecture Médaillon (Bronze, Argent, Gold) traitant 45 000 lignes issues de 3 fichiers CSV : nettoyage, harmonisation, jointures et enrichissement des données, stockées en Parquet. Production de jeux agrégés du taux de réussite au Baccalauréat par académie, année et genre.",
+    "description_en": "Spark/Scala pipeline built on a Medallion architecture (Bronze, Silver, Gold), processing 45,000 rows from 3 CSV files: cleaning, harmonization, joins, and ingestion-metadata enrichment, with output stored in Parquet. Produces aggregated datasets of Baccalauréat pass rates by academy, year, and gender.",
+    "technologies": ["Apache Spark", "Scala", "Medallion", "Parquet", "ETL"],
+    "video": "#",
+    "lien" : "#"
+  },
+  {
+    "id": 4,
+    "nom": "RAG",
+    "context": "Projet personnel",
+    "description": "Assistant conversationnel RAG répondant à des questions à partir d'une collection de recettes de pâtisserie : recherche sémantique par embeddings pour retrouver les recettes pertinentes, et génération de réponses contextualisées via un LLM local (Ollama), sur des données structurées en JSON.",
+    "description_en": "Conversational RAG assistant answering questions from a collection of pastry recipes: semantic search with text embeddings to retrieve relevant recipes, and context-based answer generation using a locally run LLM (Ollama), on recipe data structured in JSON.",
+    "technologies": ["Python", "Ollama", "nomic-embed-text", "embeddings", "JSON"],
+    "video": "#",
+    "lien" : "#"
   }
 ]
